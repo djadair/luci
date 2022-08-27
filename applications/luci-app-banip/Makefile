@@ -4,7 +4,9 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for banIP
-LUCI_DEPENDS:=+banip +luci-lib-jsonc @BROKEN
+#LUCI_DEPENDS:=+banip +luci-lib-jsonc @BROKEN
+# Allow GUI build without broken banip package.
+LUCI_DEPENDS:=+luci-lib-jsonc
 LUCI_PKGARCH:=all
 
 PKG_LICENSE:=Apache-2.0
