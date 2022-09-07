@@ -765,6 +765,8 @@ return view.extend({
 		o.rawhtml = true;
 		o.default = '<em><b>Country Selection</b></em>';
 
+		o = s.taboption('sources', form.Flag, 'ban_country_whitelist', _('Whitelist Countries'), _('Use ban_contries as a white list and block all other traffic. (Default: false ban_countries is a blacklist)'));
+		o.rmempty = false;
 		/*
 			prepare country data
 		*/
